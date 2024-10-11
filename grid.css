@@ -1,0 +1,33 @@
+/* solution */
+main {
+  display: grid;
+  margin: 24px 0;
+  grid-template-areas:
+    "prices assets"
+    "prices order"
+    "prices .";
+  grid-template-rows: 307px 1fr 1fr;
+  grid-template-columns: 1fr 437px;
+  gap: 24px;
+}
+
+/* ... */
+
+.prices {
+  grid-area: prices;
+}
+
+/* ... */
+
+.assets {
+  min-width: 430px;
+  min-height: 300px;
+  background-color: #fff1db;
+
+  grid-area: assets;
+}
+
+/* ... */
+.order {
+  grid-area: order;
+}
